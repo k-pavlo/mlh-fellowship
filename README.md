@@ -49,6 +49,9 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dep
 ```bash
 pip install -r requirements.txt
 ```
+>⚠️ Note:
+>Some dependencies, such as `cffi==1.15.0`, are not compatible with `Python 3.13+`.
+>To avoid installation errors, it's recommended to use `Python 3.9–3.11`.
 
 ## Usage
 
