@@ -1,17 +1,39 @@
-p, h1, h2, h3, h4, h5, h6, button {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
     font-family: "Roboto", serif;
 }
 
 body {
     background-color: #f5f5f9;
     background-size: cover;
-    width: auto; 
+    width: auto;
     overflow-x: hidden;
     font-family: "Roboto", serif;
     margin: 0px;
 }
 
-.nav-bar {
+section {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -2.5rem;
+}
+
+.nav-bar,
+.footer {
+    text-align: center;
     width: 100%;
     display: inline-block;
     background-color: #1C539F;
@@ -51,25 +73,25 @@ body {
 
 .profile {
     background-color: #1d539f !important;
-    text-align: center;
     height: 320px;
     margin-bottom: 50px;
 }
 
 .profile h1 {
-        font-size: 50px;
-        font-weight: 700;
-        color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
 }
 
 .profile img {
-        border-radius: 50%;
-        max-width: 100%;
-        max-height: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;        
-        padding: 20px;
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
 }
 
 .profile .profile-picture {
@@ -84,8 +106,8 @@ body {
 }
 
 .banner .logo {
-    max-width:180px;
-    max-height:60px;
+    max-width: 180px;
+    max-height: 60px;
     width: auto;
     height: auto;
 }
@@ -94,4 +116,9 @@ body {
     color: white;
     font-size: 50px;
     font-weight: 700;
+}
+
+.footer .footer-content {
+    color: white;
+    font-weight: 400;
 }
