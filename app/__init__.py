@@ -14,18 +14,18 @@ def index():
 @app.route('/profile_summary')
 def profile_summary():
     try:
-        with open('app/data/profile_summary.json', 'r') as file:
+        with open(os.path.join(app.root_path, 'data', 'profile_summary.json'), 'r') as file:
             data = json.load(file)
         return render_template('profile_summary.html', title="Profile Summary", profile_summary=data, url=os.getenv("URL"))
     except FileNotFoundError:
-        return "Profile summary not found."
+        return "Data not found."
     
 @app.route('/map')
 def map():
     try:
         API_KEY = os.getenv("API_KEY")
-        with open('app/data/map.json', 'r') as file:
+        with open(os.path.join(app.root_path, 'data', 'map.json'), 'r') as file:
             places = json.load(file)
         return render_template('map.html', title="My Travel Map", places=places, API_KEY=API_KEY, url=os.getenv("URL"))
     except FileNotFoundError:
-        return "Places data not found."
+        return "Data not found."
