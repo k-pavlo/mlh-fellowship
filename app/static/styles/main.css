@@ -32,12 +32,27 @@ ul {
 }
 
 .nav-bar {
+    gap: 20px;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1C539F;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
+    padding: 5px;
     padding-top: 10px;
+}
+
+.nav-bar img {
+    width: 200px;
+}
+
+.nav-bar a {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
 }
 
 .footer {
@@ -51,35 +66,6 @@ ul {
     font-weight: 700 !important;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
-    margin: auto;
-}
-
-.nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
-    width: 200px;
-}
-
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
 }
 
 .profile {
