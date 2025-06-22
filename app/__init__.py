@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request
+from flask import Flask, abort, render_template, request
 from dotenv import load_dotenv
 import json
 
@@ -18,7 +18,7 @@ def profile_summary():
             data = json.load(file)
         return render_template('profile_summary.html', title="Profile Summary", profile_summary=data, url=os.getenv("URL"))
     except FileNotFoundError:
-        return "Data not found."
+        abort(404, description="Profile summary data not found.")
     
 @app.route('/map')
 def map():
@@ -28,4 +28,13 @@ def map():
             places = json.load(file)
         return render_template('map.html', title="My Travel Map", places=places, API_KEY=API_KEY, url=os.getenv("URL"))
     except FileNotFoundError:
-        return "Data not found."
+        abort(404, description="Map data not found.")
+
+@app.route('/hobbies')
+def hobbies():
+    try:
+        with open(os.path.join(app.root_path, 'data', 'hobbies.json'), 'r') as file:
+            data = json.load(file)
+        return render_template('hobbies.html', title="Hobbies", hobbies=data, url=os.getenv("URL"))
+    except FileNotFoundError:
+        abort(404, description="Hobbies data not found.")
