@@ -2,22 +2,25 @@
     "name": "Firstname Lastname",
     "hobby_list": [
         {
-            "title": "Hobby 1",
-            "image_src": "./static/img/logo.jpg",
+            "title": "Road Trips",
+            "image_src": "./static/img/road_trip.png",
             "details": [
-                "Example hobby one",
-                "What is it about",
-                "How do I do it",
-                "When do I do it"
+                "I like going on road trips with friends, exploring scenic routes, coastal towns, and hidden gems across Ireland.",
+                "Summer is perfect for sunny beach visits and relaxed seaside drives."
             ]
         },
         {
-            "title": "Hobby 2",
+            "title": "Singing in the University Choir",
+            "image_src": "./static/img/chior.png",
             "details": [
-                "Example hobby two",
-                "What is it about",
-                "How do I do it",
-                "When do I do it"
+                "I enjoy being part of a musical group that performs harmonized choral pieces at events and concerts.",
+                "I attended weekly rehearsals with the choir society and joined performances during major events like Christmas services."
+            ]
+        },
+        {
+            "title": "Swimming",
+            "details": [
+                "I love swimming, but the temperature in Ireland can be quite cold."
             ]
         }
     ],
