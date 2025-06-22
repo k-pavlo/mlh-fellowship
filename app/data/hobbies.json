@@ -1,0 +1,34 @@
+{
+    "name": "Firstname Lastname",
+    "hobby_list": [
+        {
+            "title": "Hobby 1",
+            "image_src": "./static/img/logo.jpg",
+            "details": [
+                "Example hobby one",
+                "What is it about",
+                "How do I do it",
+                "When do I do it"
+            ]
+        },
+        {
+            "title": "Hobby 2",
+            "details": [
+                "Example hobby two",
+                "What is it about",
+                "How do I do it",
+                "When do I do it"
+            ]
+        }
+    ],
+    "social_links": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/MLH"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/company/major-league-hacking/posts/?feedView=all"
+        }
+    ]
+}

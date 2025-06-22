@@ -127,3 +127,13 @@ ul {
     height: 400px;
     width: 100%;
 }
+
+.hobbies h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hobbies img {
+    width: 300px;
+}
