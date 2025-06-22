@@ -31,15 +31,26 @@ ul {
     margin-left: -2.5rem;
 }
 
-.nav-bar,
-.footer {
-    text-align: center;
+.nav-bar {
     width: 100%;
     display: inline-block;
     background-color: #1C539F;
     font-family: "Roboto", serif;
     font-weight: 700 !important;
     padding-top: 10px;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1C539F;
+    text-align: center;
+    font-family: "Roboto", serif;
+    font-weight: 700 !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .nav-content .logo-touch-target {
@@ -121,6 +132,10 @@ ul {
 .footer .footer-content {
     color: white;
     font-weight: 400;
+}
+
+.map section {
+    margin-bottom: 20px;
 }
 
 #map {
