@@ -18,18 +18,18 @@
     ],
     "education": [
         {
-            "degree": "Degree Title",
-            "institution": "University Name",
-            "start": "Sep 20XX",
+            "degree": "Master of Science in Software Design and Development",
+            "institution": "University of Galway",
+            "start": "Sep 2023",
             "end": "present",
-            "details": "Short summary of your academic focus or projects."
+            "details": "Expected to graduate in Sep 2025 with a first class honours degree."
         },
         {
-            "degree": "Another Degree",
-            "institution": "Institution Name",
-            "start": "Aug 20XX",
-            "end": "present",
-            "details": "Additional academic details or thesis title."
+            "degree": "Bachelor of Quantitative Finance and Risk Management",
+            "institution": "City University of Hong Kong",
+            "start": "Aug 2011",
+            "end": "July 2015",
+            "details": "Graduated with a first class honours degree."
         }
     ],
     "hobbies": [
