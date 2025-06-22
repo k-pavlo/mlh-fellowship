@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <link lang='sass' rel="stylesheet" href="./static/styles/main.css">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
     <link rel='icon' href='./static/img/favicon.ico' type='image/x-icon' />
     <title>{{ title }}</title>
 </head>
@@ -42,7 +42,7 @@
                 const API_KEY = "{{ API_KEY }}";
             </script>
             <!-- use the variables defined above to render the map -->
-            <script src="./static/js/map.js"></script>
+            <script src="{{ url_for('static', filename='js/map.js') }}"></script>
         </section>
     </div>
 </body>
