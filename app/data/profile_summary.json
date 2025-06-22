@@ -1,18 +1,18 @@
 {
     "work_experiences": [
         {
-            "position": "Job Title",
-            "company": "Company Name",
-            "start": "Jan 20XX",
-            "end": "Dec 20XX",
-            "description": "Brief description of responsibilities and achievements."
+            "position": "Production Engineer Fellow",
+            "company": "Meta & Major League Hacking",
+            "start": "Jun 2025",
+            "end": "Present",
+            "description": "Created this portfolio =3 with my teammate."
         },
         {
-            "position": "Another Role",
-            "company": "Another Company",
-            "start": "Feb 20XX",
-            "end": "present",
-            "description": "Optional second job experience, currently ongoing."
+            "position": "Community Centre Officer",
+            "company": "Irish Red Cross",
+            "start": "Sep 2023",
+            "end": "Sep 2024",
+            "description": "Helped running Ukraine Community Centre Rathmines dealing with customers."
         }
     ],
     "education": [
