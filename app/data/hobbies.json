@@ -1,0 +1,27 @@
+{
+    "name": "Firstname Lastname",
+    "hobby_1": [
+        "IMAGE",
+        "Example hobby one",
+        "What is it about",
+        "How do I do it",
+        "When do I do it"
+    ],
+    "hobby_2": [
+        "IMAGE",
+        "Example hobby two",
+        "What is it about",
+        "How do I do it",
+        "When do I do it"
+    ],
+    "social_links": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/MLH"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/company/major-league-hacking/posts/?feedView=all"
+        }
+    ]
+}
