@@ -1,5 +1,4 @@
 {
-    "name": "Firstname Lastname",
     "work_experiences": [
         {
             "position": "Job Title",
@@ -36,15 +35,5 @@
         "Example hobby one",
         "Example hobby two",
         "Another sample interest"
-    ],
-    "social_links": [
-        {
-            "platform": "GitHub",
-            "url": "https://github.com/MLH"
-        },
-        {
-            "platform": "LinkedIn",
-            "url": "https://www.linkedin.com/company/major-league-hacking/posts/?feedView=all"
-        }
     ]
 }
