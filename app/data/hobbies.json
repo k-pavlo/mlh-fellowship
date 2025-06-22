@@ -1,18 +1,25 @@
 {
     "name": "Firstname Lastname",
-    "hobby_1": [
-        "IMAGE",
-        "Example hobby one",
-        "What is it about",
-        "How do I do it",
-        "When do I do it"
-    ],
-    "hobby_2": [
-        "IMAGE",
-        "Example hobby two",
-        "What is it about",
-        "How do I do it",
-        "When do I do it"
+    "hobby_list": [
+        {
+            "title": "Hobby 1",
+            "image_src": "./static/img/logo.jpg",
+            "details": [
+                "Example hobby one",
+                "What is it about",
+                "How do I do it",
+                "When do I do it"
+            ]
+        },
+        {
+            "title": "Hobby 2",
+            "details": [
+                "Example hobby two",
+                "What is it about",
+                "How do I do it",
+                "When do I do it"
+            ]
+        }
     ],
     "social_links": [
         {

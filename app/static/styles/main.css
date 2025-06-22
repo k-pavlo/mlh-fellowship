@@ -133,3 +133,7 @@ ul {
     font-weight: 700;
     text-align: center;
 }
+
+.hobbies img {
+    width: 300px;
+}

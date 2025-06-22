@@ -32,22 +32,19 @@
 
     <div class="hobbies">
         <h1>Hobbies</h1>
-        <section id="hobby_1">
-            <h2>Hobby 1</h2>
+        {% for hobby in hobbies.hobby_list %}
+        <section>
+            <h2>{{ hobby.title }} </h2>
+            {% if hobby.image_src %}
+            <img src= {{ hobby.image_src }}>
+            {% endif %}
             <ul>
-                {% for hobby in hobbies.hobby_1 %}
-                <li>{{ hobby }}</li>
+                {% for description in hobby.details %}
+                <li>{{ description }}</li>
                 {% endfor %}
             </ul>
         </section>
-        <section id="hobby_2">
-            <h2>Hobby 2</h2>
-            <ul>
-                {% for hobby in hobbies.hobby_2 %}
-                <li>{{ hobby }}</li>
-                {% endfor %}
-            </ul>
-        </section>
+        {% endfor %}
     </div>
 
     <footer class="footer">
