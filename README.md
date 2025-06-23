@@ -18,16 +18,17 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dep
 pip install -r requirements.txt
 ```
 >⚠️ Note:
->Some dependencies, such as `cffi==1.15.0`, are not compatible with `Python 3.13+`.
->To avoid installation errors, it's recommended to use `Python 3.9–3.11`.
+> Some dependencies, such as `cffi==1.15.0`, are not compatible with `Python 3.13+`.
+> To avoid installation errors, it's recommended to use `Python 3.9–3.11`.
 
 ## Usage
 
 Create a .env file using the example.env template (make a copy using the variables inside of the template)
 
 >⚠️ Note:
->To make the map work you will need to get your own API_KEY, configure it accordingly and put it in the .env file.
->You can follow this guide to make it: https://developers.google.com/maps/documentation/embed/get-api-key
+> To make the map work you will need to get your own API_KEY, configure it accordingly and put it in the 
+> .env file and it will look like "API_KEY = XXxxxxXXxxxXXXXXxxxXXxxXXxXXXXxXXxxxXxx".
+> You can follow this guide to get the API: https://developers.google.com/maps/documentation/embed/get-api-key
 
 Start flask development server
 ```bash
