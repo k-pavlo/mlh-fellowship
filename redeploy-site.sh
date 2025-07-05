@@ -1,3 +1,4 @@
+#!/bin/bash
 tmux kill-server
 cd mlh-fellowship/
 git fetch && git reset origin/main --hard
