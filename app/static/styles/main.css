@@ -138,3 +138,42 @@ ul {
 .hobbies img {
     width: 300px;
 }
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.post img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.post .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.post .meta {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.post .name {
+    margin: 0;
+}
+
+.post .datetime {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.post .content {
+    margin: 5px 0 0 0;
+}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section id="post_timeline">
+        <h2>Post to Timeline </h2>
+        <form id="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="content">Content:</label><br>
+            <input type="text" id="content" name="content"><br><br>
+            <input type="submit" value="Post">
+        </form>
+    </section>
+    <section id="get_timeline">
+        <h2>Timeline</h2>
+        <ul id="posts">
+            <!-- JS script below will fetch posts here -->
+        </ul>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+        <script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
+    </section>
+{% endblock content %}

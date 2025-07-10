@@ -1,5 +1,6 @@
 import os
 from flask import Flask, abort, render_template, request
+from flask_cors import CORS
 from playhouse.shortcuts import model_to_dict
 from dotenv import load_dotenv
 from peewee import *
@@ -8,6 +9,7 @@ import json
 
 load_dotenv()
 app = Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
     user=os.getenv("MYSQL_USER"),
@@ -59,7 +61,7 @@ def profile_summary():
 @app.route('/map')
 def map():
     try:
-        API_KEY = os.getenv("API_KEY")
+        API_KEY=os.getenv("MAPS_API_KEY")
         places = load_json_file('map.json')
         return render_template('map.html', title="My Travel Map", places=places, API_KEY=API_KEY, url=os.getenv("URL"))
     except FileNotFoundError:
@@ -73,7 +75,11 @@ def hobbies():
     except FileNotFoundError:
         abort(404, description="Hobbies data not found.")
 
-@app.route('/app/timeline_post', methods=['POST'])
+@app.route('/timeline')
+def timeline():
+    return render_template('timeline.html', title="Timeline", url=os.getenv("URL"))
+
+@app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
     name = request.form['name']
     email = request.form['email']
@@ -82,7 +88,7 @@ def post_time_line_post():
     
     return model_to_dict(timeline_post)
 
-@app.route('/app/timeline_post', methods=['GET'])
+@app.route('/api/timeline_post', methods=['GET'])
 def get_time_line_post():
     return {
         'timeline_posts': [
@@ -92,7 +98,7 @@ TimelinePost.select().order_by(TimelinePost.created_at.desc())
         ]
     }
 
-@app.route('/app/timeline_post', methods=['DELETE'])
+@app.route('/api/timeline_post', methods=['DELETE'])
 def delete_time_line_post():
     try:
         last_post = TimelinePost.select().order_by(TimelinePost.created_at.desc()).get()
