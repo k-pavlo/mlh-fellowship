@@ -15,10 +15,10 @@
     </section>
     <section id="get_timeline">
         <h2>Timeline</h2>
-        <ul id="posts">
+        <ul id="posts" data-api="{{ url_for('get_time_line_post') }}">
             <!-- JS script below will fetch posts here -->
         </ul>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
-        <script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
+    	<script src="{{ url_for('static', filename='js/timeline.js') }}"></script>
     </section>
 {% endblock content %}

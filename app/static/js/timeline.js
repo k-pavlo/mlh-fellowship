@@ -1,5 +1,6 @@
+const timeline_api_url = document.getElementById('posts').dataset.api;
 // fetch posts for the timeline
-fetch('http://localhost:5000/api/timeline_post')
+fetch(timeline_api_url)
     .then(res => {
         return res.json();
     })
@@ -32,7 +33,7 @@ form.addEventListener('submit', function (e) {
     // Create payload as new FormData object:
     const payload = new FormData(form);
     // Post the payload using Fetch:
-    fetch('http://localhost:5000/api/timeline_post', {
+    fetch(timeline_api_url, {
         method: 'POST',
         body: payload,
     })
