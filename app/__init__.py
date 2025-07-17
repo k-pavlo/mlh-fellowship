@@ -11,12 +11,16 @@ load_dotenv()
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
-    user=os.getenv("MYSQL_USER"),
-    password=os.getenv("MYSQL_PASSWORD"),
-    host=os.getenv("MYSQL_HOST"),
-    port=3306
-)
+if os.getenv("TESTING") == "true":
+    print("Running in test mode")
+    mydb = SqliteDatabase('file:memory?mode=memory&cache=shared', uri=True)
+else:
+    mydb = MySQLDatabase(os.getenv("MYSQL_DATABASE"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        host=os.getenv("MYSQL_HOST"),
+        port=3306
+    )
 
 print(mydb)
 
@@ -81,9 +85,18 @@ def timeline():
 
 @app.route('/api/timeline_post', methods=['POST'])
 def post_time_line_post():
+    for field in ['name', 'email', 'content']:
+        if field not in request.form:
+            return abort(400, description=f"Invalid {field}")
     name = request.form['name']
     email = request.form['email']
     content = request.form['content']
+    if not name or name.strip() == "":
+        return abort(400, description="Invalid name")
+    if not content or content.strip() == "":
+        return abort(400, description="Invalid content")
+    if not email or email.strip() == "" or '@' not in email:
+        return abort(400, description="Invalid email")
     timeline_post = TimelinePost.create(name=name, email=email, content=content)
     
     return model_to_dict(timeline_post)
