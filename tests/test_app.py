@@ -21,7 +21,7 @@ class AppTestCase(unittest.TestCase):
         self.assertIn('<a href="/timeline">Timeline</a>', html)
         # check the about me section
         self.assertIn('<h1>About Me</h1>', html)
-         # check if the footer data is loaded
+        # check if the footer data is loaded
         self.assertIn('Follow me on', html)
         self.assertIn('https://www.linkedin.com', html)
         self.assertIn('https://github.com', html)
@@ -105,7 +105,7 @@ class AppTestCase(unittest.TestCase):
     def test_malformed_timeline_post(self):
         # POST request missing name
         response = self.client.post('/api/timeline_post', data={
-            "email": "john@example.com","content": "Hello world, I'm John!"
+            "email": "john@example.com", "content": "Hello world, I'm John!"
         })
         assert response.status_code == 400
         html = response.get_data(as_text=True)
