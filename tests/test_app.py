@@ -13,6 +13,12 @@ class AppTestCase(unittest.TestCase):
         assert response.status_code == 200
         html = response.get_data(as_text=True)
         self.assertIn('<title>MLH Fellow</title>', html)
+        #check the img
+        self.assertIn('<img src="./static/img/avatar.jpg"', html)
+        img_response = self.client.get("/static/img/avatar.jpg")
+        assert img_response.status_code == 200
+        assert len(img_response.data) > 0
+        
         # check the nav bar links
         self.assertIn('<a href="/">Home</a>', html)
         self.assertIn('<a href="/profile_summary">Summary</a>', html)
