@@ -6,12 +6,8 @@ cd /root/mlh-fellowship/
 # fetch the latest changes
 git fetch && git reset origin/main --hard
 
-# enter the python virtual environment
-source python3-virtualenv/bin/activate
+# spin containers down to prevent out of memory issues
+docker compose -f docker-compose.prod.yml down
 
-# make sure all required dependencies are installed 
-pip install -r requirements.txt
-
-# restart myportfolio service
-systemctl daemon-reload
-systemctl restart myportfolio
+# rebuild and spin up containers 
+docker compose -f docker-compose.prod.yml up -d --build

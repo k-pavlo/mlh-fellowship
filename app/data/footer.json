@@ -1,13 +1,13 @@
 {
-    "name": "Firstname Lastname",
+    "name": "Pavlo Kostianov",
     "social_links": [
         {
             "platform": "GitHub",
-            "url": "https://github.com/MLH"
+            "url": "https://github.com/k-pavlo"
         },
         {
             "platform": "LinkedIn",
-            "url": "https://www.linkedin.com/company/major-league-hacking/posts/?feedView=all"
+            "url": "https://www.linkedin.com/in/pavlokostianov/"
         }
     ]
 }
