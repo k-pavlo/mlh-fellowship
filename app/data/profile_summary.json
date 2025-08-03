@@ -17,18 +17,18 @@
     ],
     "education": [
         {
-            "degree": "Master of Science in Software Design and Development",
-            "institution": "University of Galway",
-            "start": "Sep 2023",
+            "degree": "Honours Bachelor Degree of Computer Science ",
+            "institution": "Trinity College Dublin",
+            "start": "Sep 2024",
             "end": "present",
-            "details": "Expected to graduate in Sep 2025 with a first class honours degree."
+            "details": "Expected to graduate in May 2027 with a first class honours degree."
         },
         {
-            "degree": "Bachelor of Business Administration in Quantitative Finance and Risk Management",
-            "institution": "City University of Hong Kong",
-            "start": "Aug 2011",
-            "end": "July 2015",
-            "details": "Graduated with a first class honours degree."
+            "degree": "Bachelor of Software Engineering",
+            "institution": "Kyiv Polytechnic Institute",
+            "start": "Sep 2021",
+            "end": "Jun 2024",
+            "details": "Did 3 of 4 years and left to do advanced entry to Trinity College."
         }
     ]
 }
