@@ -52,7 +52,7 @@ def inject_footer_data():
 
 @app.route('/')
 def index():
-    return render_template('index.html', title="MLH Fellow", url=os.getenv("URL"))
+    return render_template('index.html', title="Pavlo Kostianov", url=os.getenv("URL"))
 
 @app.route('/profile_summary')
 def profile_summary():

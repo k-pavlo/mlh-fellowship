@@ -8,6 +8,7 @@
             <h2>{{ hobby.title }} </h2>
             {% if hobby.image_src %}
             <img src= {{ hobby.image_src }}>
+            <p>{{ hobby.image_description }}</p>
             {% endif %}
             <ul>
                 {% for description in hobby.details %}

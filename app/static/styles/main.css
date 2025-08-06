@@ -18,6 +18,12 @@ body {
     margin: 0px;
 }
 
+.profile_details h2,
+#post_timeline h2,
+#get_timeline h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
 section {
     width: 80%;
     margin-left: auto;
@@ -139,6 +145,14 @@ ul {
     width: 300px;
 }
 
+.hobbies p {
+    font-size: 12px;
+}
+
+#post_timeline #get_timeline h2{
+    text-align: center;
+}
+
 .post {
     display: flex;
     align-items: flex-start;
@@ -176,4 +190,98 @@ ul {
 
 .post .content {
     margin: 5px 0 0 0;
+}
+
+#post {
+    background: #f9f9f9;
+    padding: 24px 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    max-width: 400px;
+    margin: 0 auto 32px auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#post label {
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    display: block;
+    color: #333;
+}
+
+#post input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 0px 0 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+#post input[type="text"]:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+#post input[type="submit"] {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+/* Responsive design for mobile and tablets */
+@media (max-width: 900px) {
+    section {
+        width: 98%;
+        font-size: 16px;
+    }
+    #post {
+        max-width: 98%;
+        padding: 16px 8px;
+    }
+    .nav-bar img {
+        width: 120px;
+    }
+    .nav-bar a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        width: 100%;
+        font-size: 14px;
+        padding: 0 2px;
+    }
+    #post {
+        max-width: 100%;
+        padding: 8px 2px;
+    }
+    .nav-bar img {
+        width: 80px;
+    }
+    .nav-bar a {
+        font-size: 14px;
+    }
+    .profile h1, .banner .title, .hobbies h1 {
+        font-size: 28px;
+    }
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+#post input[type="submit"]:hover {
+    background: #005fa3;
 }

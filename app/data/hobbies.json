@@ -1,37 +1,31 @@
 {
-    "name": "Firstname Lastname",
     "hobby_list": [
         {
-            "title": "Road Trips",
-            "image_src": "./static/img/road_trip.png",
+            "title": "Travel",
+            "image_src": "./static/img/travel.jpg",
+            "image_description": "A photo of Chinyero volcano I took on Tenerife",
             "details": [
-                "I like going on road trips with friends, exploring scenic routes, coastal towns, and hidden gems across Ireland.",
-                "Summer is perfect for sunny beach visits and relaxed seaside drives."
+                "I love exploring new countries and immersing myself in different cultures.",
+                "Traveling gives me a fresh perspective on life and helps me grow both personally and intellectually."
             ]
         },
         {
-            "title": "Singing in the University Choir",
-            "image_src": "./static/img/chior.png",
+            "title": "Learning Languages",
+            "image_src": "./static/img/japanese.jpg",
+            "image_description": "Some simple sentences I wrote in Japanese",
             "details": [
-                "I enjoy being part of a musical group that performs harmonized choral pieces at events and concerts.",
-                "I attended weekly rehearsals with the choir society and joined performances during major events like Christmas services."
+                "I'm currently studying Japanese and plan to start learning Spanish soon.",
+                "Language learning fascinates me because it opens doors to understanding other cultures and connecting with people globally."
             ]
         },
         {
-            "title": "Swimming",
+            "title": "Board Games",
+            "image_src": "./static/img/board_games.jpg",
+            "image_description": "Playing 7 Wonders with friends",
             "details": [
-                "I love swimming, but the temperature in Ireland can be quite cold."
+                "I enjoy playing board games as a way to relax, strategize, and socialize with friends.",
+                "Whether it's a fast-paced card game or a complex strategy game, I love the challenge and teamwork they involve."
             ]
-        }
-    ],
-    "social_links": [
-        {
-            "platform": "GitHub",
-            "url": "https://github.com/MLH"
-        },
-        {
-            "platform": "LinkedIn",
-            "url": "https://www.linkedin.com/company/major-league-hacking/posts/?feedView=all"
         }
     ]
 }
