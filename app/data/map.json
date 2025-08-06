@@ -16,20 +16,20 @@
         "lng": 30.3333
     },
     "Ochakiv": {
-        "lat": 46.4500,
-        "lng": 31.8667
+        "lat": 46.6188,
+        "lng": 31.5388
     },
     "Pivdennoukrainsk": {
-        "lat": 47.8667,
-        "lng": 31.3333
+        "lat": 47.8228,
+        "lng": 31.1841
     },
     "Kinburn Spit": {
-        "lat": 46.4167,
-        "lng": 32.4167
+        "lat": 46.5667,
+        "lng": 31.5167
     },
     "Khorly": {
-        "lat": 46.4167,
-        "lng": 32.4167
+        "lat": 46.0781,
+        "lng": 33.2939
     },
     "Evpatoria": {
         "lat": 45.2000,
@@ -52,32 +52,44 @@
         "lng": 34.4167
     },
     "Koktebel": {
-        "lat": 44.9667,
-        "lng": 35.1667
+        "lat": 44.9662,
+        "lng": 35.2451
     },
     "Bakhchysarai": {
-        "lat": 44.7333,
-        "lng": 33.8667
+        "lat": 44.7461,
+        "lng": 33.8616
     },
     "Kropyvnytskyi": {
         "lat": 48.5089,
         "lng": 32.2623
     },
     "Kamianets-Podilskyi": {
-        "lat": 48.6742,
-        "lng": 26.5806
+        "lat": 48.6967,
+        "lng": 26.5825
     },
     "Bukovel": {
-        "lat": 48.4167,
-        "lng": 24.4167
+        "lat": 48.3653,
+        "lng": 24.4004
     },
-    "Dragobrat": {
-        "lat": 48.0833,
-        "lng": 24.4167
+    "Drahobrat": {
+        "lat": 48.2496,
+        "lng": 24.2496
     },
     "Hoverla": {
-        "lat": 48.2500,
-        "lng": 24.1667
+        "lat": 48.1602,
+        "lng": 24.5000
+    },
+    "Nessebar": {
+        "lat": 42.6601,
+        "lng": 27.7206
+    },
+    "Saints Constantine and Helena": {
+        "lat": 43.2317,
+        "lng": 28.0101
+    },
+    "Albena": {
+        "lat": 43.3663,
+        "lng": 28.0818
     },
     "Krakow": {
         "lat": 50.0647,
@@ -106,6 +118,10 @@
     "Antalya": {
         "lat": 36.8969,
         "lng": 30.7133
+    },
+    "Budapest": {
+        "lat": 47.4979,
+        "lng": 19.0402
     },
     "Marsa Alam": {
         "lat": 25.0667,
@@ -212,8 +228,8 @@
         "lng": -8.6267
     },
     "Saltee Islands": {
-        "lat": 52.1667,
-        "lng": -6.9167
+        "lat": 52.1167,
+        "lng": -6.6167
     },
     "Galway": {
         "lat": 53.2707,

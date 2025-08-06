@@ -24,6 +24,7 @@ body {
     text-align: center;
     margin-bottom: 24px;
 }
+
 section {
     width: 80%;
     margin-left: auto;
@@ -72,6 +73,14 @@ ul {
     font-weight: 700 !important;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.footer-content a {
+    color: white;
+}
+
+.footer-content a:hover {
+    color: #ddd;
 }
 
 .profile {
@@ -149,7 +158,7 @@ ul {
     font-size: 12px;
 }
 
-#post_timeline #get_timeline h2{
+#post_timeline #get_timeline h2 {
     text-align: center;
 }
 
@@ -196,7 +205,7 @@ ul {
     background: #f9f9f9;
     padding: 24px 32px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     max-width: 400px;
     margin: 0 auto 32px auto;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -244,13 +253,16 @@ ul {
         width: 98%;
         font-size: 16px;
     }
+
     #post {
         max-width: 98%;
         padding: 16px 8px;
     }
+
     .nav-bar img {
         width: 120px;
     }
+
     .nav-bar a {
         font-size: 16px;
     }
@@ -262,22 +274,29 @@ ul {
         font-size: 14px;
         padding: 0 2px;
     }
+
     #post {
         max-width: 100%;
         padding: 8px 2px;
     }
+
     .nav-bar img {
         width: 80px;
     }
+
     .nav-bar a {
         font-size: 14px;
     }
-    .profile h1, .banner .title, .hobbies h1 {
+
+    .profile h1,
+    .banner .title,
+    .hobbies h1 {
         font-size: 28px;
     }
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     height: auto;
 }
