@@ -12,7 +12,7 @@ class AppTestCase(unittest.TestCase):
         response = self.client.get('/')
         assert response.status_code == 200
         html = response.get_data(as_text=True)
-        self.assertIn('<title>MLH Fellow</title>', html)
+        self.assertIn('<title>Pavlo Kostianov</title>', html)
         #check the img
         self.assertIn('<img src="./static/img/avatar.jpg"', html)
         img_response = self.client.get("/static/img/avatar.jpg")
