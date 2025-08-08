@@ -1,3 +1,78 @@
+/* Hobbies grid and card styles */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.hobby-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(28, 83, 159, 0.08);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+
+.hobby-card:hover {
+    box-shadow: 0 8px 32px rgba(28, 83, 159, 0.16);
+}
+
+.hobby-img-container {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 4/3;
+    background: #e9eef7;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+.hobby-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(28, 83, 159, 0.12);
+    display: block;
+}
+
+.hobby-img-desc {
+    font-size: 1.08rem;
+    color: #444;
+    margin-bottom: 1.1rem;
+    text-align: center;
+    margin-top: 0.3rem;
+}
+
+.hobby-content {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.hobby-card ul {
+    padding-left: 1.2rem;
+    margin: 0.8rem 0 0 0;
+    text-align: left;
+}
+
+.hobby-card li {
+    font-size: 1.08rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+    line-height: 1.7;
+}
+
 p,
 h1,
 h2,
@@ -245,6 +320,42 @@ ul {
     cursor: pointer;
     font-weight: 600;
     transition: background 0.2s;
+}
+
+/* Lightbox styles for fullscreen image preview */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(28, 83, 159, 0.18);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10000;
 }
 
 /* Responsive design for mobile and tablets */

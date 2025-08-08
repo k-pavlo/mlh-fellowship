@@ -3,19 +3,47 @@
 {% block content %}
     <div class="hobbies">
         <h1>Hobbies</h1>
-        {% for hobby in hobbies.hobby_list %}
-        <section>
-            <h2>{{ hobby.title }} </h2>
-            {% if hobby.image_src %}
-            <img src= {{ hobby.image_src }}>
-            <p>{{ hobby.image_description }}</p>
-            {% endif %}
-            <ul>
-                {% for description in hobby.details %}
-                <li>{{ description }}</li>
-                {% endfor %}
-            </ul>
-        </section>
-        {% endfor %}
+        <div class="hobbies-grid">
+            {% for hobby in hobbies.hobby_list %}
+            <div class="hobby-card">
+                {% if hobby.image_src %}
+                <div class="hobby-img-container">
+                    <img src="{{ hobby.image_src }}" alt="{{ hobby.title }} image" class="hobby-img" onclick="openLightbox(this)">
+                </div>
+                {% if hobby.image_description %}
+                <p class="hobby-img-desc">{{ hobby.image_description }}</p>
+                {% endif %}
+                {% endif %}
+                <div class="hobby-content">
+                    <h2>{{ hobby.title }}</h2>
+                    <ul>
+                        {% for description in hobby.details %}
+                        <li>{{ description }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
+    <!-- Lightbox for fullscreen image preview -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <img id="lightbox-img" src="" alt="Full Image">
+    </div>
+<script>
+function openLightbox(img) {
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = img.src;
+    lightbox.classList.add('active');
+}
+function closeLightbox(e) {
+    if (e) e.stopPropagation();
+    var lightbox = document.getElementById('lightbox');
+    var lightboxImg = document.getElementById('lightbox-img');
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+}
+</script>
 {% endblock content %}
